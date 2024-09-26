@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,54 +11,67 @@
             background-color: #f4f4f4;
             display: flex;
             justify-content: center;
-            background-image: url("https://img.freepik.com/free-vector/shiny-blue-background_1378-149.jpg?size=626&ext=jpg&ga=GA1.1.1021201821.1709896454&semt=ais_hybrid");
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220112/pngtree-glass-morphim-effect-registration-banner-with-gradient-blue-image_934693.jpg");
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
+
         .container {
             margin-top: 50px;
-            background-color: #fff;
-            padding: 20px;
             border-radius: 8px;
-            width: 100%;
-            max-width: 500px;
-            background-image: url("https://img.freepik.com/free-vector/colorful-background-with-picture-person-middle_125964-1610.jpg?w=826&t=st=1727239782~exp=1727240382~hmac=70db21c3ff3cd3bd49f4f635bb161c8aaf313650fa9a48c98c18b73d80275cc2");
+            backdrop-filter: blur(10px);
+            background-color: rgba(237, 236, 241, 0.3);
+            padding: 40px 20px 40px 20px;
+            border-radius: 10px;
+            width: 700px;
+
         }
+
         h1 {
+           
             text-align: center;
             color: #333;
         }
+
         form {
             display: flex;
             flex-direction: column;
         }
+
         label {
             margin: 10px 0 5px;
             color: #555;
         }
+
         input {
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: none;
+            border-bottom: 2px solid #000;
+            background-color: transparent;
+            outline: none;
+            padding: 5px;
+            width: 100%;
+            color: #000;
         }
+
         .error {
             color: red;
             font-size: 0.875em;
         }
-        button {
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            background-color: #007bff;
-            color: #fff;
-            font-size: 1em;
-            cursor: pointer;
-        }
-        
 
+        button {
+            margin-top: 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            height: 40px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Registration Form</h1>
@@ -71,7 +85,7 @@
             <span id="mobileError" class="error"></span>
 
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email"  required>
+            <input type="email" id="email" name="email" required>
             <span id="emailError" class="error"></span>
 
             <label for="age">Age:</label>
@@ -87,4 +101,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
